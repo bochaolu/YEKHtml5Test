@@ -1,0 +1,153 @@
+/*公共样式 开始*/
+html{
+	overflow: hidden;
+}
+.line{
+	width:0.52rem;
+	height: 0.09rem;
+	border-radius: 0.09rem;
+	background-image: linear-gradient(0deg,#fc666e 0%,#f9461f 100%);
+}
+.arrow{
+	width:0.66rem;
+	height: 0.66rem;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 0.66rem;
+	color: #fff;
+	background-image: linear-gradient(0deg,#fc666e 0%,#f9461f 100%);
+	border: 0.07rem solid rgba(255,255,255,0.8);
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0.2rem;
+/*引用动画*/
+animation: arrowfadein 1s ease alternate infinite;
+-webkit-animation:arrowfadein 1s ease alternate infinite;
+}
+/*定义动画*/
+@keyframes arrowfadein {
+	0%{
+		opacity: 1;
+		transform:translateY(0rem)
+		-webkit-transform:translateY(0rem);
+	}
+	100%{
+		opacity: 0.3;
+		transform:translateY(-0.2rem)
+		-webkit-transform:translateY(-0.2rem);
+	}
+}
+.swiper-slide .title{
+	margin-top: 0.7rem;
+	margin-left: 0.6rem;
+	width: 1.65rem;
+}
+/*公共样式 结束*/
+
+/*slide1 开始*/
+.slide1{
+	background:url(../images/slide1/bg.png) no-repeat center center/cover;
+}
+
+.slide1 .fav{
+	float: right;
+	width: 1.53rem;
+}
+.slide1 .block{
+	position:absolute;
+	width:5.57rem;
+	margin:auto;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+}
+.slide1 .quanquan{
+	position:absolute;
+	width:9.77rem;
+	margin:auto;
+	left:50%;
+	margin-left: -4.885rem;
+	right:0;
+	bottom:0;
+	top:0;
+}
+.slide1 .shoes{
+	position:absolute;
+	width:6.94rem;
+	margin:auto;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+}
+.slide1 .title1{
+	position:absolute;
+	top: 9.23rem;
+	left: 0.6rem;
+	width:2.81rem;
+}
+.slide1 .gongyi{
+	position:absolute;
+	width:1.32rem;
+	left: 0.6rem;
+	top: 11.4rem;
+}
+.slide1 .price{
+	position:absolute;
+	width:1.88rem;
+	right: 0.6rem;
+	top:11.4rem;
+}
+/*slide1 结束*/
+/*slide2 开始*/
+.slide2{
+	background:url(../images/slide2/bg.png) no-repeat center center/cover;
+}
+.slide2 .shoes{
+	position:absolute;
+	width:6.83rem;
+	margin:auto;
+	left:0;
+	right:0;
+	top:3.25rem;
+}
+.slide2 .tool-box{
+	/*margin:上下左右;*/
+	/*margin:上下 左右;*/
+	/*margin:上 左右 下;*/
+	/*margin:上 右 下 左;*/
+	margin:0 0.3rem;
+	width: calc(100% - 0.6rem);
+	height: 4.71rem;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+	border-radius: 0.2rem 0.2rem 0 0;
+}
+.slide2 .arrow{
+	bottom: 4.31rem;
+}
+.slide2 .line{
+	margin: 0.95rem 0 0 0.3rem
+}
+.slide2 .sub-title{
+	font-size: 0.4rem;
+	color: #828282;
+	margin: 0.47rem 0 0 0.3rem;
+}
+.slide2 .title2{
+	font-size: 0.5rem;
+	color: #434343;
+	margin: 0.1rem 0 0 0.3rem;
+	font-weight:bold; 
+}
+.slide2 .desc{
+	font-size: 0.18rem;
+	color: #828282;
+	margin: 0.59rem 0 0 0.3rem;
+	line-height:0.3rem; 
+}
+/*slide2 结束*/

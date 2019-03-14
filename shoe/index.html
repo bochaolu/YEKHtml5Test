@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" rem="750">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NIKE运动鞋</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <Link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/u-reset.min.css">
+    <style>
+        
+    
+    </style>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide slide1" >
+
+            <img src="img/fav.png" class="fav ani" 
+            swiper-animate-effect="zoomIn"
+            swiper-animate-duration="0.2s">
+            <img src="img/鞋.png" class="xie shoes ani" swiper-animate-effect="rollIn"
+            swiper-animate-duration="0.5s"
+            swiper-animate-delay="0.4s">
+            <img src="img/back.png" class="back block ani"
+            swiper-animate-effect="zoomIn"
+            swiper-animate-duration="0.5s">
+            <div class="arrow" style="font-size:16px;">∨</div>
+        </div>
+        <div class="swiper-slide slide2">
+            <img src="img/zhuangshi2.png" class="title ani"
+            swiper-animate-effect="bounceInDown"
+            swiper-animate-duration="0.3s">
+            <img src="img/slide2/shoes.png" class="shoes ani"
+            swiper-animate-effect="rollIn"
+            swiper-animate-duration="0.3s"
+            swiper-animate-delay="0.4s">
+            <div class="tool-box">
+                <div class="arrow">∨</div>
+                <div class="line"></div>
+                <h4 class="sub-title">远离枯燥的旧式人生</h4>
+                <h2 class="title2">做个自由自在的野孩子</h2>
+                <p class="desc">Keep away from the dull old-fationed life,be a<br> free wild child!</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+
+            
+        </div>
+        <div class="swiper-slide">
+        </div>
+    </div>
+</div>
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper.animate1.0.3.min.js"></script>
+<script>
+
+    var swiper = new Swiper('.swiper-container',{
+    	direction:"vertical",
+    	height:window.innerHeight,
+    	on:{
+      init: function(){
+        swiperAnimateCache(this); //隐藏动画元素 
+        swiperAnimate(this); //初始化完成开始动画
+      }, 
+      slideChangeTransitionEnd: function(){ 
+        swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+        //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+      } 
+    }
+    });
+</script>
+</body>
+</html>
