@@ -1,0 +1,28 @@
+div{
+
+    width:96px;height:48px;
+    border:2px solid  #000;
+    border-bottom: 48px solid #000;
+    border-radius:50% ;
+    position: absolute;left:0;right:0;
+    bottom: 0;top:0;margin: auto;
+    transition: all 2s linear;
+}
+div:before{
+    content: "";
+    width:8px;height:8px;border:20px solid #000;
+    background:#fff;
+    border-radius: 50%;
+
+    position: absolute;
+    left:0;top:50%;
+}
+div:after{
+    content: "";
+    width:8px;height:8px;border:20px solid #fff;
+    background:#000;
+    border-radius: 50%;
+
+    position: absolute;
+    right:0;top:50%;
+}
